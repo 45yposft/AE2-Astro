@@ -1,0 +1,62 @@
+@import url('fonts.css');
+
+body {
+  display: flex;
+  flex-flow: column;
+}
+
+nav {
+  width: 100%;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  color: var(--clr-navbar);
+  position: fixed;
+  font-family: 'Poppins';
+}
+
+.navbar__title {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.navbar__list--item {
+  padding: 12px 8px;
+  font-weight: 500;
+}
+
+.navbar__list--item:checked {
+  color: blue;
+}
+
+.prueba {
+  height: 200px;
+  margin-top: 43px;
+}
+
+
+footer {
+  background-color: var(--clr-lightgray);
+  color: white;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 12px;
+}
+
+.highlighted {
+  font-weight: 600;
+}
+
+.footer__social {
+  display: flex;
+  gap: 1rem;
+}
