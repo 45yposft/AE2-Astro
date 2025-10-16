@@ -3,11 +3,98 @@ import '../css/reset.css';
 import '../css/root.css';
 import '../css/fonts.css';
 import '../css/styles.css';
-import PlantillaBase from "../layout/plantillaBase.astro"
+import { Image } from 'astro:assets';
+import PlantillaBase from "../layout/plantillaBase.astro";
+import Button from '../components/button.astro';
+import Cards from '../components/cards.astro';
+let btn = "btn__pricing1";
+let btn2 = "btn__pricing2";
+let btn3 = "btn__pricing3";
+let card1 = "pricing__color1";
+let card2 = "pricing__color2";
+let card3 = "pricing__color3";
+// import imgcard1 from "../assets/";
+// import imgcard2 from "../assets/";
+// import imgcard3 from "../assets/";
+// import associate from "../assets/";
 let title = "Landing";
 let description = "Pagina de pruebas";
 ---
 
 <PlantillaBase title={title} description={description}>
-  <div class="prueba"></div>
+  <div class="pricing__container">
+    <div class="pricing__container--title">
+      <h1 class="pricing__title">Let's Build Something</h1>
+      <p class="pricing__parrafo">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis.</p>
+    </div>
+  </div>
+  <main>
+    <section class="pricing__section1">
+      <div class="pricing__section1--row row">
+        <Cards id={card1}>
+          <div>
+            <h2>Website</h2>
+            <p>starting at</p>
+          </div>
+          <div>
+            <p>$999</p>
+          </div>
+          <div>
+            <div>
+              <p>1 Complete Product</p>
+              <p>1 Year Support</p>
+              <p>Dedicated Server</p>
+              <p>1 Research Demos</p>
+            </div>
+          </div>
+          <div>
+            <Button btn={btn} />
+          </div>
+        </Cards>
+        <Cards id={card2}>
+          <div>
+            <h2>Brand + Website</h2>
+            <p>starting at</p>
+          </div>
+          <div>
+            <p>$1500</p>
+          </div>
+          <div>
+            <div>
+              <p>1 Complete Product</p>
+              <p>1 Year Support</p>
+              <p>Dedicated Server</p>
+              <p>1 Research Demos</p>
+            </div>
+          </div>
+          <div>
+            <Button btn={btn2} />
+          </div>
+        </Cards>
+        <Cards id={card3}>
+          <div>
+            <h2>Full Web Package</h2>
+            <p>starting at</p>
+          </div>
+          <div>
+            <p>$2000</p>
+          </div>
+          <div>
+            <div>
+              <p>1 Complete Product</p>
+              <p>1 Year Support</p>
+              <p>Dedicated Server</p>
+              <p>1 Research Demos</p>
+            </div>
+          </div>
+          <div>
+            <Button btn={btn3} />
+          </div>
+        </Cards>
+      </div>
+      <div class="pricing__section1--row row">
+        <p>Have something more custom in mind? <span>Get A Quote</span></p>
+      </div>
+    </section>
+  </main>
 </PlantillaBase>

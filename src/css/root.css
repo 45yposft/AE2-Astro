@@ -10,4 +10,7 @@
   --clr-green: #31c56e;
   --clr-red: #EB514E;
   --clr-orange: #FFA03B;
+  --font-prim: 'Montserrat';
+  --font-sec: 'Ubuntu';
+  --font-ter: 'Poppins';
 }
