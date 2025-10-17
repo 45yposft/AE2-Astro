@@ -17,8 +17,8 @@ let card3 = "pricing__color3";
 // import imgcard2 from "../assets/";
 // import imgcard3 from "../assets/";
 // import associate from "../assets/";
-let title = "Landing";
-let description = "Pagina de pruebas";
+let title = "Pricing";
+let description = "Pagina de pruebas(pricing)";
 ---
 
 <PlantillaBase title={title} description={description}>
@@ -32,68 +32,74 @@ let description = "Pagina de pruebas";
     <section class="pricing__section1">
       <div class="pricing__section1--row row">
         <Cards id={card1}>
-          <div>
-            <h2>Website</h2>
-            <p>starting at</p>
+          <div class="pricing__card--title">
+            <h2 class="pcard__title">Website</h2>
+            <p class="pcard__subtitle">starting at</p>
           </div>
-          <div>
-            <p>$999</p>
+          <div class="pricing__card--price">
+            <p class="pcard__amount">$999</p>
           </div>
-          <div>
-            <div>
-              <p>1 Complete Product</p>
-              <p>1 Year Support</p>
-              <p>Dedicated Server</p>
-              <p>1 Research Demos</p>
-            </div>
+          <div class="pricing__card--details">
+            <ul class="pcard__details">
+              <li>1 Complete Product</li>
+              <li>1 Year Support</li>
+              <li>Dedicated Server</li>
+              <li>1 Research Demos</li>
+            </ul>
           </div>
-          <div>
-            <Button btn={btn} />
+          <div class="pricing__card--button">
+            <Button btn={btn}>
+              Get started
+            </Button>
           </div>
         </Cards>
         <Cards id={card2}>
-          <div>
-            <h2>Brand + Website</h2>
-            <p>starting at</p>
+          <div class="pricing__card--title">
+            <h2 class="pcard__title">Brand + Website</h2>
+            <p class="pcard__subtitle">starting at</p>
           </div>
-          <div>
-            <p>$1500</p>
+          <div class="pricing__card--price">
+            <p class="pcard__amount">$1500</p>
           </div>
-          <div>
-            <div>
-              <p>1 Complete Product</p>
-              <p>1 Year Support</p>
-              <p>Dedicated Server</p>
-              <p>1 Research Demos</p>
-            </div>
+          <div class="pricing__card--details">
+            <ul class="pcard__details">
+              <li>1 Complete Product</li>
+              <li>1 Year Support</li>
+              <li>Dedicated Server</li>
+              <li>1 Research Demos</li>
+            </ul>
           </div>
-          <div>
-            <Button btn={btn2} />
+          <div class="pricing__card--button">
+            <Button btn={btn2}>
+              Get started
+            </Button>
           </div>
         </Cards>
         <Cards id={card3}>
-          <div>
-            <h2>Full Web Package</h2>
-            <p>starting at</p>
+          <div class="pricing__card--title">
+            <h2 class="pcard__title">Full Web Package</h2>
+            <p class="pcard__subtitle">starting at</p>
           </div>
-          <div>
-            <p>$2000</p>
+          <div class="pricing__card--price">
+            <p class="pcard__amount">$2000</p>
           </div>
-          <div>
-            <div>
-              <p>1 Complete Product</p>
-              <p>1 Year Support</p>
-              <p>Dedicated Server</p>
-              <p>1 Research Demos</p>
-            </div>
+          <div class="pricing__card--details">
+            <ul class="pcard__details">
+              <li>1 Complete Product</li>
+              <li>1 Year Support</li>
+              <li>Dedicated Server</li>
+              <li>1 Research Demos</li>
+            </ul>
           </div>
-          <div>
-            <Button btn={btn3} />
+          <div class="pricing__card--button">
+            <Button btn={btn3}>
+              Get started
+            </Button>
           </div>
         </Cards>
       </div>
       <div class="pricing__section1--row row">
-        <p>Have something more custom in mind? <span>Get A Quote</span></p>
+        <p>Have something more custom in mind? <span class="phighlighted">Get A Quote</span></p>
       </div>
     </section>
   </main>

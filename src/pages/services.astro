@@ -3,9 +3,22 @@ import '../css/reset.css';
 import '../css/root.css';
 import '../css/fonts.css';
 import '../css/styles.css';
-import PlantillaBase from "../layout/plantillaBase.astro"
-let title = "Landing";
-let description = "Pagina de pruebas";
+import { Image } from 'astro:assets';
+import PlantillaBase from "../layout/plantillaBase.astro";
+import Button from '../components/button.astro';
+import Cards from '../components/cards.astro';
+let btn = "btn__services1";
+let btn2 = "btn__services2";
+let btn3 = "btn__services3";
+let card1 = "services__color1";
+let card2 = "services__color2";
+let card3 = "services__color3";
+// import imgcard1 from "../assets/";
+// import imgcard2 from "../assets/";
+// import imgcard3 from "../assets/";
+// import associate from "../assets/";
+let title = "Services";
+let description = "Pagina de pruebas(services)";
 ---
 
 <PlantillaBase title={title} description={description}>
