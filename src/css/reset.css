@@ -28,3 +28,19 @@ button {
 ul, ol {
   list-style: none;
 }
+
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:not([rows]) {
+  min-height: 10em
+}

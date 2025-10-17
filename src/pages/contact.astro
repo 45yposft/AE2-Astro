@@ -3,11 +3,66 @@ import '../css/reset.css';
 import '../css/root.css';
 import '../css/fonts.css';
 import '../css/styles.css';
-import PlantillaBase from "../layout/plantillaBase.astro"
-let title = "Landing";
+import PlantillaBase from "../layout/plantillaBase.astro";
+import Button from '../components/button.astro';
+let btn = "btn__services";
+let title = "Contact Us";
 let description = "Pagina de pruebas";
 ---
 
 <PlantillaBase title={title} description={description}>
-  <div class="prueba"></div>
+  <div class="contact__container">
+    <div class="contact__container--title">
+      <h1 class="contact__title">Contact Us</h1>
+      <p class="contact__parrafo">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis.</p>
+    </div>
+  </div>
+  <main>
+    <section>
+      <div class="section__contact--row row">
+        <div class="contact__input">
+          <h2 class="form__title">Send Us An Email</h2>
+          <div class="form__container">
+            <form class="contact__form">
+              <label for="form-name" class="form-item">Name</label>
+              <input type="text" id="form-name" class="form-item item-styling">
+              <label for="form-email" class="form-item">Email</label>
+              <input type="email" id="form-email" class="form-item item-styling">
+              <label for="form-ptitle" class="form-item">Project Title</label>
+              <input type="text" id="form-ptitle" class="form-item item-styling">
+              <label for="form-pdetails" class="form-item">Project Details</label>
+              <textarea id="form-pdetails" class="form-item item-styling"></textarea>
+              <Button btn={btn}>
+                Submit
+              </Button>
+            </form>
+          </div>
+        </div>
+        <div class="contact__address">
+          <div class="our__email">
+            <h3 class="parrafo">Email</h3>
+            <p class="title__address">email@domain.com</p>
+          </div>
+          <div class="our__phone">
+            <h3 class="parrafo">Phone</h3>
+            <p class="title__address">+(123) 443-769-456</p>
+          </div>
+          <div class="our__address">
+            <h3 class="parrafo">Address</h3>
+            <p class="title__address">ODIO Studios, PO Box4535, San Francisco, CA</p>
+          </div>
+        </div>
+      </div>
+      <div class="section__contact--row row">
+        <div class="mapa">
+          <iframe
+            id="ourMap"
+            width="1060"
+            height="800"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-8.63456726074219%2C42.14924626141355%2C-8.605384826660158%2C42.174949505962026&amp;layer=mapnik&amp;marker=42.16209918886928%2C-8.619976043701172">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 </PlantillaBase>
