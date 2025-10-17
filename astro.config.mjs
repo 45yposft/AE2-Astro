@@ -9,5 +9,5 @@ export default defineConfig({
     defaultStrategy: 'viewport'
   },
   site: 'https:45yposft.github.io',
-  base: '/',
+  base: '/AE2-Astro',
 });
