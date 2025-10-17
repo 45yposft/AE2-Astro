@@ -5,22 +5,55 @@ import '../css/fonts.css';
 import '../css/styles.css';
 import { Image } from 'astro:assets';
 import PlantillaBase from "../layout/plantillaBase.astro";
-import Button from '../components/button.astro';
 import Cards from '../components/cards.astro';
-let btn = "btn__services1";
-let btn2 = "btn__services2";
-let btn3 = "btn__services3";
 let card1 = "services__color1";
 let card2 = "services__color2";
 let card3 = "services__color3";
-// import imgcard1 from "../assets/";
-// import imgcard2 from "../assets/";
-// import imgcard3 from "../assets/";
-// import associate from "../assets/";
+import imgcard1 from "../assets/icon-1.png";
+import imgcard2 from "../assets/icon-2.png";
+import imgcard3 from "../assets/icon-3.png";
 let title = "Services";
 let description = "Pagina de pruebas(services)";
 ---
 
 <PlantillaBase title={title} description={description}>
-  <div class="prueba"></div>
+  <div class="services__container">
+    <div class="services__container--title">
+      <h1 class="services__title">Our Services</h1>
+      <p class="services__parrafo">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis.</p>
+    </div>
+  </div>
+  <main>
+    <section class="services__section1">
+      <div class="services__section1--row row">
+        <Cards id={card1}>
+          <Image src={imgcard1} alt="Imagen" />
+          <div class="services__card--title">
+            <h3 class="card__title">Branding</h3>
+          </div>
+          <div class="services__card--details">
+            <p class="parrafo">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+          </div>
+        </Cards>
+        <Cards id={card2}>
+          <Image src={imgcard2} alt="Imagen" />
+          <div class="services__card--title">
+            <h3 class="card__title">SEO</h3>
+          </div>
+          <div class="services__card--details">
+            <p class="parrafo">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+          </div>
+        </Cards>
+        <Cards id={card3}>
+          <Image src={imgcard3} alt="Imagen" />
+          <div class="services__card--title">
+            <h3 class="card__title">Development</h3>
+          </div>
+          <div class="services__card--details">
+            <p class="parrafo">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+          </div>
+        </Cards>
+      </div>
+    </section>
+  </main>
 </PlantillaBase>
