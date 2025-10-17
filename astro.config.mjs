@@ -7,6 +7,7 @@ export default defineConfig({
   prefetch: {
     prefetchAll: true,
     defaultStrategy: 'viewport'
-  }
-
+  },
+  site: 'https:45yposft.github.io',
+  base: '/',
 });
